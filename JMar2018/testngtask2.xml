@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+  <test name="Test">
+    <classes>
+      <class name="homeworkPack2.CreateLead"/>
+      <class name="homeworkPack2.DeleteLead"/>
+      <class name="homeworkPack2.EditLead"/>
+      <class name="homeworkPack2.DuplicateLead"/>
+      <class name="homeworkPack2.MergeLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
