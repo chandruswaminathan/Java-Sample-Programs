@@ -1,108 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100709" started-at="2018-04-15T08:29:34Z" finished-at="2018-04-15T08:31:15Z">
+  <suite name="Default suite" duration-ms="29090" started-at="2018-04-29T17:02:51Z" finished-at="2018-04-29T17:03:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100709" started-at="2018-04-15T08:29:34Z" finished-at="2018-04-15T08:31:15Z">
-      <class name="testcases.TC005_MergeLead">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="beforeSuite" is-config="true" duration-ms="672" started-at="2018-04-15T13:59:33Z" finished-at="2018-04-15T13:59:34Z">
+    <test name="Default test" duration-ms="29090" started-at="2018-04-29T17:02:51Z" finished-at="2018-04-29T17:03:20Z">
+      <class name="testcases.TC006_BuySunglass">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="beforeSuite" is-config="true" duration-ms="688" started-at="2018-04-29T22:32:51Z" finished-at="2018-04-29T22:32:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-04-15T13:59:34Z" finished-at="2018-04-15T13:59:34Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-04-29T22:32:51Z" finished-at="2018-04-29T22:32:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="setData" is-config="true" duration-ms="0" started-at="2018-04-15T13:59:34Z" finished-at="2018-04-15T13:59:34Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="setData" is-config="true" duration-ms="0" started-at="2018-04-29T22:32:51Z" finished-at="2018-04-29T22:32:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="beforeMethod" is-config="true" duration-ms="16988" started-at="2018-04-15T13:59:35Z" finished-at="2018-04-15T13:59:52Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="beforeMethod" is-config="true" duration-ms="10901" started-at="2018-04-29T22:32:51Z" finished-at="2018-04-29T22:33:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="createLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="createLead" duration-ms="81922" started-at="2018-04-15T13:59:52Z" data-provider="fetchData" finished-at="2018-04-15T14:01:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[14]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[15]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[No records to display]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-	at utils.Reporter.reportStep(Reporter.java:60)
-	at utils.Reporter.reportStep(Reporter.java:70)
-	at wdMethods.SeMethods.verifyExactText(SeMethods.java:224)
-	at pages.ViewLead.verifyText(ViewLead.java:20)
-	at testcases.TC005_MergeLead.createLead(TC005_MergeLead.java:43)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="login" duration-ms="17283" started-at="2018-04-29T22:33:02Z" finished-at="2018-04-29T22:33:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="afterMethod" is-config="true" duration-ms="750" started-at="2018-04-15T14:01:14Z" finished-at="2018-04-15T14:01:15Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="afterMethod" is-config="true" duration-ms="891" started-at="2018-04-29T22:33:20Z" finished-at="2018-04-29T22:33:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-15T14:01:15Z" finished-at="2018-04-15T14:01:15Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-29T22:33:20Z" finished-at="2018-04-29T22:33:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC005_MergeLead@159c4b8]" name="afterSuite" is-config="true" duration-ms="565" started-at="2018-04-15T14:01:15Z" finished-at="2018-04-15T14:01:15Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC006_BuySunglass@159c4b8]" name="afterSuite" is-config="true" duration-ms="453" started-at="2018-04-29T22:33:21Z" finished-at="2018-04-29T22:33:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases.TC005_MergeLead -->
+      </class> <!-- testcases.TC006_BuySunglass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

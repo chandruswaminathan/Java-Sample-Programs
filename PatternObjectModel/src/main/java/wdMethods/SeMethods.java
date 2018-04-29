@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.InvalidElementStateException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
@@ -103,6 +104,16 @@ public class SeMethods extends Reporter implements WdMethods{
 		}
 		return null;
 	}
+	
+	
+	public List<WebElement> locateElements(String locator, String locValue) {
+		
+		
+			List<WebElement> list = driver.findElementsById(locValue); 
+			return list;
+			
+		}
+	
 
 	public WebElement locateElement(String locValue) {
 		return driver.findElementById(locValue);
@@ -112,6 +123,19 @@ public class SeMethods extends Reporter implements WdMethods{
 		try {
 			ele.clear();
 			ele.sendKeys(data);
+			String x = ""+ele;
+			reportStep("The data: "+data+" entered successfully in the field :"+ele, "PASS");
+		} catch (InvalidElementStateException e) {
+			reportStep("The data: "+data+" could not be entered in the field :"+ele,"FAIL");
+		} catch (WebDriverException e) {
+			reportStep("Unknown exception occured while entering "+data+" in the field :"+ele, "FAIL");
+		}
+	}
+	
+	public void typewithEnter(WebElement ele, String data) {
+		try {
+			ele.clear();
+			ele.sendKeys(data,Keys.ENTER);
 			String x = ""+ele;
 			reportStep("The data: "+data+" entered successfully in the field :"+ele, "PASS");
 		} catch (InvalidElementStateException e) {
